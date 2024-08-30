@@ -1,4 +1,10 @@
 function revealSurprise() {
-    alert("Bingo! You found an Easter egg!");
-    // You can replace the alert with more complex actions, like displaying hidden content
+    const surprise = document.getElementById('surprise');
+    if (surprise.classList.contains('hidden')) {
+        surprise.classList.remove('hidden');
+        surprise.classList.add('show');
+    } else {
+        surprise.classList.add('hidden');
+        surprise.classList.remove('show');
+    }
 }

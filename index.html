@@ -8,17 +8,38 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Deadpool's Realm</h1>
+        <h1>Deadpool's Domain</h1>
+        <nav>
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#easter-eggs">Easter Eggs</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section id="intro">
-            <p>Explore the world of Deadpool with hidden surprises along the way!</p>
+            <h2>Welcome to Deadpool's World</h2>
+            <p>Discover hidden surprises and enjoy the chaotic fun of Deadpool!</p>
+            <div id="intro-image"></div>
         </section>
         <section id="easter-eggs">
-            <p>Click on the Deadpool mask to reveal a surprise!</p>
-            <div id="deadpool-mask" onclick="revealSurprise()"></div>
+            <h2>Easter Eggs</h2>
+            <p>Click on Deadpool’s gear to uncover hidden surprises!</p>
+            <div id="deadpool-gear" onclick="revealSurprise()"></div>
+            <div id="surprise" class="hidden">
+                <img src="surprise.png" alt="Surprise Image">
+                <p>Congratulations! You found a secret!</p>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Deadpool</h2>
+            <p>Deadpool is known for his irreverent humor and breaking the fourth wall. Learn more about his adventures and misadventures here!</p>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2024 Deadpool's Domain. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
