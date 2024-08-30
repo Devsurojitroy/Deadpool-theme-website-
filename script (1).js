@@ -1,10 +1,10 @@
 function revealSurprise() {
     const surprise = document.getElementById('surprise');
-    if (surprise.classList.contains('hidden')) {
+    if (surprise.style.display === 'none' || surprise.style.display === '') {
+        surprise.style.display = 'block';
         surprise.classList.remove('hidden');
-        surprise.classList.add('show');
     } else {
+        surprise.style.display = 'none';
         surprise.classList.add('hidden');
-        surprise.classList.remove('show');
     }
 }
